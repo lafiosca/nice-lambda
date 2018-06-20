@@ -74,6 +74,28 @@ Preprocesses an `event.body64` base64-encoded form-url-encoded input into an
 Preprocesses an `event.body64` base64-encoded raw post input into an
 `event.body` object before running `fn`. Returns the raw response from `fn`.
 
+### apiMethods(methodHash)
+
+Similar to `api` but creates a multi-purpose Lambda which can handle the
+specified HTTP methods. `methodHash` should be an object in which the keys are
+lowercase HTTP method verbs (e.g., "get") and their values are promise-generating
+functions like the ones you would pass to `api`.
+
+```
+const { apiMethods } = require('nice-lambda');
+const {
+	getResource,
+	updateResource,
+	deleteResource,
+} = require('./resource');
+
+exports.handler = apiMethods({
+	get: getResource,
+	post: updateResource,
+	delete: deleteResource,
+});
+```
+
 ## documentation note
 
 The above documentation is incomplete at this time, but further information can

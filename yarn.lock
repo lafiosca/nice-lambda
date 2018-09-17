@@ -266,9 +266,9 @@ minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
-nice-invoke-lambda@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/nice-invoke-lambda/-/nice-invoke-lambda-0.4.0.tgz#2bd9fb22e6ca2d3c146893a09e64b2eea35f0c5a"
+nice-invoke-lambda@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/nice-invoke-lambda/-/nice-invoke-lambda-1.0.0.tgz#a57c1a432b1698ae712e36dfcd9ae5bfaa67fd0c"
   dependencies:
     aws-sdk "^2.259.1"
 

@@ -1,6 +1,6 @@
 {
   "name": "nice-lambda",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A nice way to make AWS Lambda handlers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

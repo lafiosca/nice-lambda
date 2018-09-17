@@ -1,1 +1,9 @@
-node_modules/
+node_modules
+build
+export
+debug
+dist
+yarn-error.log
+
+.idea/
+.*.swp

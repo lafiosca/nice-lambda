@@ -2,9 +2,12 @@
   "name": "nice-lambda",
   "version": "1.0.0",
   "description": "A nice way to make AWS Lambda handlers",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "./node_modules/.bin/tslint -p tsconfig.json -c tslint.json",
+    "build": "./node_modules/.bin/tsc",
+    "prepublish": "./node_modules/.bin/tsc"
   },
   "repository": {
     "type": "git",
@@ -17,7 +20,8 @@
     "api",
     "post",
     "handler",
-    "boom"
+    "boom",
+    "typescript"
   ],
   "author": "Joe Lafiosca <joe@lafiosca.com>",
   "license": "MIT",
@@ -26,14 +30,17 @@
   },
   "homepage": "https://github.com/lafiosca/nice-lambda#readme",
   "dependencies": {
-    "bluebird": "^3.5.1",
     "boom": "^7.2.0",
-    "lodash": "^4.17.10",
-    "nice-invoke-lambda": "^0.3.0"
+    "lodash": "^4.17.11",
+    "nice-invoke-lambda": "^0.4.0"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.12.0"
+    "@types/aws-lambda": "^8.10.13",
+    "@types/boom": "^7.2.0",
+    "@types/lodash": "^4.14.116",
+    "@types/node": "^10.10.0",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.10.0",
+    "typescript": "^3.0.1"
   }
 }

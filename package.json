@@ -1,6 +1,6 @@
 {
   "name": "nice-lambda",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "A nice way to make AWS Lambda functions and call them",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -1,9 +1,9 @@
 'use strict';
 
-const _ = require('lodash');
+const lodash = require('lodash');
 const tests = require('./tests');
 
-_.each(tests, (test, name) => {
+lodash.each(tests, (test, name) => {
 	test(
 		{ hello: 'world', httpMethod: 'GET' },
 		{},

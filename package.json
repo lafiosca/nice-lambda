@@ -1,11 +1,10 @@
 {
   "name": "nice-lambda",
-  "version": "2.0.1",
-  "description": "A nice way to make AWS Lambda handlers",
+  "version": "3.0.0",
+  "description": "A nice way to make AWS Lambda functions and call them",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "lint": "./node_modules/.bin/tslint -p tsconfig.json -c tslint.json",
     "build": "./node_modules/.bin/tsc",
     "prepublish": "./node_modules/.bin/tsc"
   },
@@ -17,10 +16,10 @@
     "aws",
     "lambda",
     "promise",
+    "async",
     "api",
     "post",
     "handler",
-    "boom",
     "typescript"
   ],
   "author": "Joe Lafiosca <joe@lafiosca.com>",
@@ -30,17 +29,19 @@
   },
   "homepage": "https://github.com/lafiosca/nice-lambda#readme",
   "dependencies": {
-    "boom": "^7.2.0",
-    "lodash": "^4.17.11",
-    "nice-invoke-lambda": "^1.0.0"
+    "@hapi/boom": "^9.1.0",
+    "aws-sdk": "^2.668.0",
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.13",
-    "@types/boom": "^7.2.0",
-    "@types/lodash": "^4.14.116",
-    "@types/node": "^10.10.0",
-    "tslint": "^5.11.0",
-    "tslint-config-airbnb": "^5.10.0",
-    "typescript": "^3.0.1"
+    "@types/aws-lambda": "^8.10.51",
+    "@types/lodash": "^4.14.150",
+    "@types/node": "^13.13.4",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-typescript": "^7.2.1",
+    "eslint-plugin-import": "^2.20.2",
+    "typescript": "^3.8.3"
   }
 }

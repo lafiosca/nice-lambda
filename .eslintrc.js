@@ -21,8 +21,5 @@ module.exports = {
 			ignoreRegExpLiterals: true,
 		}],
 		'@typescript-eslint/indent': [2, 'tab', { SwitchCase: 1 }],
-		// 'import/no-unresolved': 0, // ts already provides errors for this and updates more quickly in VSCode
-		// 'import/prefer-default-export': 0,
-		// 'import/no-extraneous-dependencies': [2, { devDependencies: true }], // allows import of type def libs
 	},
 };

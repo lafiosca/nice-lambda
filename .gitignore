@@ -5,5 +5,5 @@ debug
 dist
 yarn-error.log
 
-.idea/
+.vscode
 .*.swp
